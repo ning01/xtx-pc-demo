@@ -190,6 +190,7 @@
 }
 .popular .hd h2,
 .popular .hd h2 span{
+  margin-left:34px;
   margin-bottom:40px;
   font-weight: 400;
 
@@ -320,24 +321,32 @@
 .top-brand .bd img{
   width: 244px;
 }
-/* 生鲜 fresh  服饰*/
+/* 生鲜 fresh , 服饰 ,  餐厨区域 kitchen ,
+  居家区域home*/
 .fresh,
-.clothes{
+.clothes,
+.kitchen,
+.home{
  width: 1240px;
  padding:34px 0 42px;
 
 }
 
-.fresh .h2,
-.clothes .h2{
+.fresh .hd h2,
+.clothes .hd h2,
+.kitchen .hd h2,
+.home .hd h2{
   height: 28px;
-  line-height: 28x;
+  line-height: 28px;
   font-size: 29px;
-  color:#333;
   font-weight: 400;
+  color:#333;
 
 }
-.fresh .look{
+.fresh .look,
+.clothes .look,
+.kitchen .look,
+.home .look{
   margin:9px 0 0 76px;
   padding-right: 22px;
   font-size: 16px;
@@ -345,7 +354,9 @@
   position: relative;
 }
 .fresh .hd li,
-.clothes .hd li{
+.clothes .hd li,
+.kitchen .hd li,
+.home .hd li{
   float:left;
   height: 16px;
   line-height: 16px;;
@@ -355,12 +366,17 @@
   margin: 8px 6px 0 0;
 }
 .fresh  .hd .fr li:hover,
-.clothes  .hd .fr li:hover{
+.clothes  .hd .fr li:hover,
+.kitchen .hd .fr li:hover,
+.home .hd .fr li:hover{
   background-color: #27ba9b;
 }
 
 .fresh .look::after,
-.clothes .look::after{
+.clothes .look::after,
+.kitchen .look::after,
+.home .look::after,
+.topic .hd .look::after{
   content:'';
   width: 7px;
   height: 13px;
@@ -373,11 +389,15 @@
 
 }
 .fresh .bd,
-.clothes  .bd{
+.clothes  .bd,
+.kitchen .bd,
+.home .bd{
   margin-top:34px ;
 }
 .fresh .bd img,
-.clothes  .bd img{
+.clothes  .bd img,
+.kitchen .bd img,
+.home .bd img{
   float:left;
   width: 240px;
   height: 617px;
@@ -386,7 +406,9 @@
 
 }
 .fresh .bd li,
-.clothes  .bd li{
+.clothes  .bd li,
+.kitchen .bd li,
+.home .bd li{
   float: left;
   box-sizing: border-box;
   width: 242px;
@@ -396,7 +418,9 @@
   position: relative;
 }
 .fresh .bd li  img,
-.clothes .bd li  img{
+.clothes .bd li  img,
+.kitchen .bd li img,
+.home .bd li img{
   width: 184px;
   height: 184px;
   background-color: #fff;
@@ -404,7 +428,9 @@
 }
 
 .fresh .bd li .intorduce,
-.clothes  .bd li .intorduce{
+.clothes  .bd li .intorduce,
+.kitchen .bd li .intorduce,
+.home .bd li .intorduce{
   margin-left:29px;
   margin-bottom:15px;
   height: 87px;
@@ -415,7 +441,9 @@
   letter-spacing: 0px;
 }
 .fresh .bd li p:last-child,
-.clothes  .bd li p:last-child{
+.clothes  .bd li p:last-child,
+.kitchen .bd li p:last-child,
+.home .bd li p:last-child{
       font-size: 22px;
       color:#9a2e1f;
 }
@@ -459,6 +487,92 @@
 }
 
 .fresh .bd li:hover .current,
-.clothes  .bd li:hover .current{
+.clothes  .bd li:hover .current,
+.kitchen .bd li:hover .current,
+.home .bd li:hover .current{
   display: block;
+}
+/* 最新专题topic */
+.new-topic{
+  background-color: #f5f5f5;
+  height: 500px;
+ }
+ .new-topic .topic {
+   width: 1240px;
+   position: relative;
+
+ }
+ .topic .hd h2{
+  height: 28px;
+  line-height: 28px;
+  padding: 44px 0 27px;
+  font-size: 29px;
+  font-weight: 400;
+  font-stretch: normal;
+	letter-spacing: 0px;
+ }
+ .topic .hd .look{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 13px;
+    font-size: 16px;
+}
+.topic .bd li{
+  float:left;
+  width: 405px;
+  height: 357px;
+  background-color: #fff;
+  margin-right:12px;
+}
+.topic .bd li:nth-child(3n){
+  margin-right:0;
+}
+.topic .bd li img{
+  width: 404px;
+  height: 288px;
+  padding:1px;
+
+}
+.topic .bd li button{
+  background-color: #fff;
+  margin-top:27px;
+  padding-left:20px;
+  font-size: 14px;
+  color:#333;
+  position: relative;
+}
+.topic .bd li button::after{
+  position: absolute;
+  top:4px;
+  left:2px;
+  content:'';
+  width: 16px;
+  height: 16px;
+  /* background-color: blue; */
+  background-image:url(../images/sprites.png);
+}
+.topic .bd .heart::after{
+  background-position: -120px -110px;
+  color:red;
+}
+.topic .bd .eye::after{
+  background-position: -160px -110px;
+}
+.topic .bd .text::after{
+  background-position: -200px -110px;
+
+}
+
+.topic .bd .heart{
+  margin-left:34px;
+}
+.topic .bd .eye{
+  margin-left:40px;
+}
+.topic .bd .text{
+  margin-right:18px;
+}
+.topic .bd .active::after{
+  background-position: -240px -110px;
 }
