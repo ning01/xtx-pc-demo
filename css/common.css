@@ -126,8 +126,23 @@
   background-image: url(../images/sprites.png);
   background-position: -119px -69px;
   margin-top:24px;
+  position: relative;
 }
+.header .car::after{
+  position: absolute;
+  top:-5px;
+  left:13px;
+  content:'2';
+  text-align: center;
+  line-height: 13px;
+  width: 20px;
+  height: 15px;
+  background-color: #e26237;
+  border-radius: 15px;
+  font-size: 13px;
+  color:#fff;
 
+}
 /* 版权区域 */
 .footer{
 
